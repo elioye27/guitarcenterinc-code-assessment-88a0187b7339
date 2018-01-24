@@ -1,0 +1,59 @@
+body{
+	font: 15px/1.5 Arial, Halvetical, sans-serif;
+	padding: 15px;
+	margin: 15px;
+	border: solid black;
+	overflow: hidden;
+}
+
+/* Header*/
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 5px;
+	min-height: 25px;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header ul{
+	margin:0;
+	padding: 0;
+}
+
+header li{
+	float:left;
+	display: inline;
+	padding: 0 100px 0 100px;
+}
+
+/*section1*/
+
+#main {
+	padding: 15px;
+	margin: 5px;
+	border: solid grey;
+	border-radius: 10px;
+}
+
+article {
+	float:right;
+}
+
+aside {
+	float:right;
+}
+
+#art{
+	padding: 15px;
+	margin: 15px;
+	border: solid black;
+}
+
+#mainImg{
+	min-height: 400px;
+
+}
