@@ -38,7 +38,7 @@ header ul{
 header li{
 	float:left;
 	display: inline;
-	padding: 0 100px 0 100px;
+	padding: 0 135px 0 20px;
 }
 
 header a:hover{
@@ -48,31 +48,28 @@ header a:hover{
 
 /*section1*/
 
-
-#sec1 {
-	width: 75%;
-}
-
-#main {
+#sec1{
+	width: 72.5%;
 	padding: 15px;
-	margin: 15px;
-	margin-right: 5%;
-	border: solid grey;
+	margin: 5px;
+	/*margin-right: 5px;*/
+	border: solid grey 1px;
 	border-radius: 10px;
 }
 
-article {
+article, h4{
 	float:right;
 	width: 5%;
-	min-width: 500px;
+	min-width: 300px;
 	margin-top: 5px;
-	text-align: center;
+	
 }
 
 h4{
 	background-color: grey;
 	color: #ffffff;
 	border: solid black;
+	text-align: center;
 }
 
 aside {
@@ -80,7 +77,14 @@ aside {
 	padding: 15px;
 	width: 20%;
 	background: grey;
-	min-height: 500px;
+	min-height: 815px;
+	margin-top: -420px;
+}
+
+#links{
+	background-color: #ffffff;
+	padding: 10px;
+	text-decoration: 0;
 }
 
 #art{
@@ -89,8 +93,8 @@ aside {
 	border: solid black;
 }
 
-#mainImg {
-	min-height: 420px;
+img {
+	min-height: 375px;
 
 }
 
@@ -106,8 +110,6 @@ aside {
 	min-width: 600px;
 	padding: 0;
 	margin: 0;
-
-	/*text-align: center;*/
 }
 
 #itmes{
@@ -132,7 +134,7 @@ aside {
 
 footer {
 	padding: 5px;
-	margin-top: 310px;
+	margin-top: 25px;
 	border: solid black;
 	background-color: grey;
 }
