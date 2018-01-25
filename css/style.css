@@ -49,7 +49,9 @@ header li{
 }
 
 header a:hover{
-	color: #cccccc;
+	color: black;
+	background-color: #f1f1f1;
+	padding: 16px;
 	font-weight:bold;
 }
 
@@ -79,42 +81,50 @@ h4{
 	text-align: center;
 }
 
-aside {
+
+/*aside bar*/
+ 
+ aside {
 	float: right;
 	padding: 15px;
 	width: 20%;
-	background: grey;
+	background: #ccc;
 	min-height: 815px;
 	margin-top: -420px;
 }
-
-/*aside bar*/
-
+   
 .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border-bottom: 2px;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
 }
-
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: grey;
+    color:white; 
 }
-
 .panel {
     padding: 0 18px;
+    display: none;
     background-color: white;
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+}
+.panel-link {
+	color:white; 
+    padding: 0 18px;
+    display: none;
+    background-color: grey; 
+    overflow: hidden;
 }
 
+
+/*Article*/
 
 #art{
 	padding: 15px;
@@ -132,7 +142,6 @@ aside {
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -151,7 +160,9 @@ aside {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -159,6 +170,43 @@ aside {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
 img {
@@ -191,14 +239,35 @@ img {
 	float: left;
 	text-align: center;
 	width: 30%;
-	padding: 10px;
+	padding-right: 10px;
 }
 
 .box img{
-	width: 240px;
+	float: left;
+	text-align: center;
+	min-height: 50px;
 	border: solid grey 2px;
 	padding: 15px;
+
 }
+
+/*form{
+	margin: 0 80px 25px 80px;
+}*/
+
+input {
+	width: 60%;
+}
+
+span {
+	width: 400px;
+}
+
+#submit{
+	width: 30%;
+	margin: 0 10px 25px 80px;
+}
+
 
 footer {
 	padding: 5px;
@@ -213,18 +282,25 @@ footer {
 	header
 	header nav,
 	header nav li,
-	h1{
+	h1, img{
 		float: none;
-		text-align: center;
+		display: block;
 		width: 100%;
 	}
 
+	form{
+		float: none;
+		display: block;
+		width: 100%;
+		margin:auto;
+	}
 
 		#sec1, 
 		#sec2{
 		margin-top: 40px;
 		width: 100%;
 		border: 0;
+		padding: 1px;
 	}
 
 	aside{

@@ -5,18 +5,22 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Guitar Center | Welcome</title>
 	<link rel="stylesheet" href="./css/style.css">
-	<script type="text/javascript" src="./javascript/app.js"></script>
+	
 </head>
 <body>
 	<header>
 		<nav>
-			<ul class="dropdown">
-				<li><a href="#">Guitars</a></li>
-					<div class="dropdown-content">
-					    <a href="#">Link 1</a>
-					    <a href="#">Link 2</a>
-					    <a href="#">Link 3</a>
-					</div>
+			<ul>
+				<div class="dropdown">
+					<li><a href="#">Guitars</a>
+						<div class="dropdown-content">
+						    <a href="#">Electric Guitars</a>
+						    <a href="#">Accustic Guitars</a>
+						    <a href="#">Accustic-Electric Guitars</a>
+						    <a href="#">Classical Guitars</a>
+						</div>
+					</li>
+				</div>
 
 				<li><a href="#">Bass</a></li>
 				<li><a href="#">Drums</a></li>
@@ -42,77 +46,118 @@
 		
 
 	<aside>
-		<div id="links">
-			<button class="accordion">Link 1</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div> <hr>
-
-			<button class="accordion">Link 2</button>
-			<div class="panel">
-			  <ul>
-			  	<li><a href="#">sub-link</a></li>
-			  	<li><a href="#">sub-link</a></li>
-			  	<li><a href="#">sub-link</a></li>
-			  </ul>
-			</div><hr>
-
-
-			<button class="accordion">Link 3</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			</div><hr>
-
-			<button class="accordion">Link 4</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			</div><hr>
-
-		</div>
-	</aside>
+       <div id="div-right">
+               
+           <button class="accordion">Link 1</button>
+           <div class="panel">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+       
+           <button class="accordion">Link 2</button>
+           <div class="panel-link">
+               <ul style="list-style-type:none:cursor:default;">
+                       <li>sub-link</li>
+                       <li>sub-link</li>
+                       <li>sub-link</li>
+               </ul>  
+           </div>
+       
+           <button class="accordion">Link 3</button>
+           <div class="panel">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+       
+           <button class="accordion">Link 4</button>
+           <div class="panel">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+       
+       </div><!--div-right-->
+    </aside>
 		
 	
 
 	<section id="sec2">
 		<div class="container">
-			<div id="btn">
-				<button>On Sale</button>
-				<button>Arrived</button>
-				<button>Sing-Up</button>
+			<div class="tab">
+			  <button class="tablinks" onclick="openTab(event, 'OnSale')">On Sale</button>
+			  <button class="tablinks" onclick="openTab(event, 'NewArrivals')">New Arrivals</button>
+			  <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
 			</div>
 
+			<div id="OnSale" class="tabcontent">
+				<h3>HEADLINER DEALS</h3>
+				<div class="box">
+					<img src="./images/product1.JPG">
+					<h5>The Name of this Instrument</h5>
+						<p class="strike">Was: $500.00</p>
+						<p>Now: $295.00</p>
+				</div>
 
-			<div id="itmes"></div>
+				<div class="box">
+					<img src="./images/product2.JPG">
+					<h5>The Name of this Instrument</h5>
+						<p class="strike">Was: $500.00</p>
+						<p>Now: $295.00</p>
+				</div>
 
-			<!-- <h3>HEADLINER DEALS</h3>
-			
-			<div class="box">
-				<img src="./images/product1.JPG">
-				<h5>The Name of this Instrument</h5>
-					<p class="strike">Was: $500.00</p>
-					<p>Now: $295.00</p>
+				<div class="box">
+					<img src="./images/product3.JPG">
+					<h5>The Name of this Instrument</h5>
+						<p class="strike">Was: $500.00</p>
+						<p>Now: $295.00</p>
+				</div>
 			</div>
 
-			<div class="box">
-				<img src="./images/product2.JPG">
-				<h5>The Name of this Instrument</h5>
-					<p class="strike">Was: $500.00</p>
-					<p>Now: $295.00</p>
+			<div id="NewArrivals" class="tabcontent">
+			  <h3>New Arrivals</h3>
+			  <p>New Arrivals is the capital of France.</p> 
 			</div>
 
-			<div class="box">
-				<img src="./images/product3.JPG">
-				<h5>The Name of this Instrument</h5>
-					<p class="strike">Was: $500.00</p>
-					<p>Now: $295.00</p>
+			<div id="SignUp" class="tabcontent">
+			  <h3>New Account</h3>
+			    <form>
+			    	<span>First name:</span>
+				  <input type="text" name="firstname">
+				  <br><br>
+				  	<span>Last name:</span>
+				  <input type="text" name="lastname">
+				  <br><br>
+					<span>Email Address:</span>
+				  <input type="text" email="email">
+				  <br><br>
+					<span>Communication Method:</span>
+				  <select>
+					  <option value="Email">Email</option>
+					  <option value="Phone">Phone</option>
+					  <option value="Social Media">Social Media</option>
+					</select>
+				  <br><br>
+					
+				 	<div id="class">
+				 		<span>Birthday:</span>
+					  <select>
+						  <option value="Email">Month</option>
+						</select>
+
+						  <select>
+						  <option value="Email">Day</option>
+						</select>
+					<div>
+				  <br>
+
+				  <input id="submit" type="submit" value="Create Account">
+				</form> 
 			</div>
-		</div> -->
+	
+		</div>
 	</section>
 
 	<footer>
 		<p>Copyright &copy; Guitar Center, Inc.</p>
 	</footer>
 	
+	<script type="text/javascript" src="./javascript/app.js"></script>
 </body>
 </html>
 	
