@@ -69,9 +69,14 @@ header a:hover{
 article, h4{
 	float:right;
 	width: 5%;
-	min-width: 300px;
+	min-width: 400px;
 	margin-top: 5px;
+	margin-bottom: 28px;
 	
+}
+
+img{
+	width: 699px;
 }
 
 h4{
@@ -89,9 +94,14 @@ h4{
 	padding: 15px;
 	width: 20%;
 	background: #ccc;
-	min-height: 815px;
+	min-height: 450px;
 	margin-top: -420px;
 }
+
+.clearfix {
+    overflow: auto;
+}
+
    
 .accordion {
     background-color: #eee;
@@ -209,8 +219,11 @@ h4{
     border-top: none;
 }
 
-img {
-	min-height: 375px;
+.tabcontent img {
+	width:240px;
+	border: solid grey 1px;
+	border-radius: 5px;
+	padding-left: 150px;
 
 }
 
@@ -240,21 +253,6 @@ img {
 }
 
 
-.box{
-	float: left;
-	text-align: center;
-	width: 30%;
-	padding-right: 10px;
-}
-
-.box img{
-	float: left;
-	text-align: center;
-	min-height: 50px;
-	border: solid grey 2px;
-	padding: 15px;
-
-}
 
 .new-arrival-image{
 	min-width: 100px;
