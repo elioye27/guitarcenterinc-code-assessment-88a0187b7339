@@ -234,6 +234,11 @@ img {
 
 }
 
+.strike{
+    text-decoration:line-through;
+    color:red;
+}
+
 
 .box{
 	float: left;
