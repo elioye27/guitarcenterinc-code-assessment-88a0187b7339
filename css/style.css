@@ -240,20 +240,22 @@ img {
 }
 
 
-.box{
+/*.box{
 	float: left;
 	text-align: center;
 	width: 30%;
 	padding-right: 10px;
-}
+}*/
 
 .box img{
 	float: left;
+	display: inline;
+	width: 10%;
 	text-align: center;
-	min-height: 50px;
+	
+	min-height: 20px;
 	border: solid grey 2px;
 	padding: 15px;
-
 }
 
 /*form{
